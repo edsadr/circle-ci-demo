@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+</head>
+<body>
+<script type="text/javascript" charset="utf-8">
+  window.onload = function () {
+    document.getElementById('gcloud-form').addEventListener("submit", function(e){
+     // e.preventDefault()
+      // console.log('test')
+    })
+  }
+</script>
+  <div id="gcform">
+  <form name="contact-form" id="gcloud-form" action="/form" method="post">
+  <div class="contact-form-main cf form-content">
+    <h2 class="contact-form-title">Sign up for updates on N|Solid and the Google Cloud Platform.</h2>
+    <div class="contact-form-fields">
+      <div class="two-column">
+        <input required="" type="text" name="gc_first_name" placeholder="First Name" />
+        <input type="text" name="last_name" placeholder="Last Name" />
+      </div>
+      <input required="" type="email" name="gc_email" placeholder="Email Address" />
+      <input required="" type="text" name="gc_company" placeholder="Company">
+      <label>
+        <input type="checkbox" name="gc_updates"> Do you want to receive information about NodeSource?
+      </label>
+      <div class="contact-form-checkbox">
+        <input class="primary button" type="submit" value="Submit">
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+<div id="result" style="display: none;"></div>
+</body>
+</html>
