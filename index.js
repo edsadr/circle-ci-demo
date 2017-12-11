@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(express.static('public'))
 
-app.get('/', (req, res) => res.send('Nice server'))
+app.get('/', (req, res) => res.send('Nice server from Codeanywhere!'))
 
 app.post('/form', (req, res) => res.json(req.body))
 
